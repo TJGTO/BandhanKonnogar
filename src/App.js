@@ -34,8 +34,6 @@ const useStyles = makeStyles(theme => ({
 function App() {
   
   const classes = useStyles();
-  const [searchText, setsearchText] = useState(null);
-  const [filteredData,setfilteredData] = useState(null);
   const [resultData,setresultData] = useState(null);
 
   function onsearch(e){
@@ -55,36 +53,9 @@ function App() {
     })
   },[]);
 
-  function searchResult(){
-    console.log("************",searchText);
-      if(searchText){
-           let searchResults = getFilteredArray(resultData,searchText);
-           console.log(searchResults);
-           setfilteredData(searchResults);
-      }
-      
-  }
-
-  
-		
-	function getFilteredArray(resultData, _searchText) {
-		const arr = Object.keys(resultData).map(id => resultData[id]);
-		if (_searchText.length === 0) {
-			return arr;
-		}
-		return Apputils.filterArrayByString(arr, _searchText);
-	}
-
-
 
   return (
     <>
-      {/* <div className={classes.searchbox}>
-       <TextField id="outlined-basic" label="Search" variant="outlined" size="small" onChange={onsearch} />
-       <Button variant="contained" color="secondary" className={classes.searchbutton} onCLick={searchResult}>
-        <SearchIcon/> Search
-      </Button>
-      </div> */}
       <div>
       {
         resultData && 
