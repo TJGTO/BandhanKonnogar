@@ -36,17 +36,13 @@ function App() {
   const classes = useStyles();
   const [resultData,setresultData] = useState(null);
 
-  function onsearch(e){
-      console.log(e.target.value);
-      setsearchText(e.target.value);
-  }
    
   useEffect(()=>{
     axios.get(`https://randomuser.me/api/?results=20&seed=1`)
     .then((response)=>{
         console.log(response.data.results);
         setresultData(response.data.results);
-        setfilteredData(response.data.results);
+
     })
     .catch((error)=>{
        console.log(error);
