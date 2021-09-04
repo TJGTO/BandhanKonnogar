@@ -23,6 +23,7 @@ import Typography from '@material-ui/core/Typography';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import { useDispatch, useSelector } from 'react-redux';
 import UserDetail from './userDetail';
+import UserdetailHeader from './userdetailHeader';
 import * as Actions from '../Store/actions';
 
 
@@ -76,22 +77,7 @@ function UserDetailsDialog(props) {
                   {
 					todoRequiredDialog.data && 
 					<>
-					<div style={{textAlign: "center",width:"100%"}}>
-				 		<img src={todoRequiredDialog.data.picture.large} alt="Avatar" style={{width:"200px",borderRadius:"50%"}}></img>
-				  	</div>
-					
-					<div style={{textAlign: "center",width:"100%",fontWeight:"700",color:"#f50057"}}>
-						{todoRequiredDialog.data.name.title +" "+ todoRequiredDialog.data.name.first +" "+ todoRequiredDialog.data.name.last}
-					</div>
-
-					<div style={{textAlign: "center",width:"100%",fontWeight:"700",color:"#66c2ff",marginTop:"1%"}}>
-						{todoRequiredDialog.data.email}
-					</div>
-
-					<div className={classes.location}>
-						<div><LocationOnIcon/></div> 
-						<div> {todoRequiredDialog.data.location.city+", "+todoRequiredDialog.data.location.country} </div>
-					</div>
+					<UserdetailHeader data={todoRequiredDialog.data}/>
 					<Divider variant="inset"  />
 					<br></br>
 					{
