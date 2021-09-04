@@ -121,12 +121,16 @@ const EnhancedTable = ({ columns, data, onRowClick }) => {
 									return (
 										<TableCell
 											{...cell.getCellProps()}
-											className={clsx('p-12', classes.text)}
+											//className={clsx('p-12', classes.text)}
 										>
-											
-											{cell.column.Header === 'Profile Picture'?
+											{
+											 cell.column.Header === 'Profile Picture'?
                                              <Avatar alt="Remy Sharp" src={row.original.picture.thumbnail} /> 
-                                             :cell.render('Cell')}
+                                             :
+											 cell.column.Header === 'Name'?
+                                             <p>{row.original.name.title +" "+ row.original.name.first +" "+ row.original.name.last}</p> 
+											  
+											 :cell.render('Cell')}
 											
 										</TableCell>
 									);

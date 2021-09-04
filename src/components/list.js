@@ -36,12 +36,17 @@ function List(props) {
             {
 				Header: 'Profile Picture',	
 			},
-			{
-				Header: 'User Name',	
-				accessor: 'email',
+            {
+				Header: 'Name',	
 				className: 'font-bold',
 				sortable: true
 			},
+			{
+				Header: 'Email',	
+				accessor: 'email',
+				className: 'font-bold',
+				sortable: true
+			},           
 			{
 				Header: 'Gender',
 				accessor : 'gender',
