@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/BandhanKonnogar/static/css/main.a617e044.chunk.css",
+    "main.js": "/BandhanKonnogar/static/js/main.a7e73d50.chunk.js",
+    "main.js.map": "/BandhanKonnogar/static/js/main.a7e73d50.chunk.js.map",
+    "runtime-main.js": "/BandhanKonnogar/static/js/runtime-main.218acf72.js",
+    "runtime-main.js.map": "/BandhanKonnogar/static/js/runtime-main.218acf72.js.map",
+    "static/js/2.b9a9937d.chunk.js": "/BandhanKonnogar/static/js/2.b9a9937d.chunk.js",
+    "static/js/2.b9a9937d.chunk.js.map": "/BandhanKonnogar/static/js/2.b9a9937d.chunk.js.map",
+    "static/js/3.6035a82b.chunk.js": "/BandhanKonnogar/static/js/3.6035a82b.chunk.js",
+    "static/js/3.6035a82b.chunk.js.map": "/BandhanKonnogar/static/js/3.6035a82b.chunk.js.map",
+    "index.html": "/BandhanKonnogar/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/BandhanKonnogar/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.b9a9937d.chunk.js.LICENSE.txt": "/BandhanKonnogar/static/js/2.b9a9937d.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/BandhanKonnogar/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.218acf72.js",
+    "static/js/2.b9a9937d.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.a7e73d50.chunk.js"
+  ]
+}
