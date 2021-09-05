@@ -57,5 +57,53 @@ class Apputils {
     static searchInString(value, searchText) {
 		return value.toLowerCase().includes(searchText);
 	}
+	static descompareemail(a, b) {
+		const bandA = a.email.toUpperCase();
+		const bandB = b.email.toUpperCase();
+	  
+		let comparison = 0;
+		if (bandA > bandB) {
+		  comparison = 1;
+		} else if (bandA < bandB) {
+		  comparison = -1;
+		}
+		return comparison* -1;
+	}
+	static asccompareemail(a, b) {
+		const bandA = a.email.toUpperCase();
+		const bandB = b.email.toUpperCase();
+	  
+		let comparison = 0;
+		if (bandA > bandB) {
+		  comparison = 1;
+		} else if (bandA < bandB) {
+		  comparison = -1;
+		}
+		return comparison;
+	}
+	static descompareage(a, b) {
+		const bandA = a.dob.age;
+		const bandB = b.dob.age;
+	  
+		let comparison = 0;
+		if (bandA > bandB) {
+		  comparison = 1;
+		} else if (bandA < bandB) {
+		  comparison = -1;
+		}
+		return comparison* -1;
+	}
+	static asccompareage(a, b) {
+		const bandA = a.dob.age;
+		const bandB = b.dob.age;
+	  
+		let comparison = 0;
+		if (bandA > bandB) {
+		  comparison = 1;
+		} else if (bandA < bandB) {
+		  comparison = -1;
+		}
+		return comparison;
+	}
 }
 export default Apputils;
