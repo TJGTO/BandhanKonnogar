@@ -14,7 +14,6 @@ import Link from '@material-ui/core/Link';
 import clsx from 'clsx';
 import { useGlobalFilter, usePagination, useRowSelect, useSortBy, useTable } from 'react-table';
 import Avatar from '@material-ui/core/Avatar';
-// import { useDispatch, useSelector } from 'react-redux';
 import PaginationActions from './paginationActions';
 import { makeStyles } from '@material-ui/core/styles';
 

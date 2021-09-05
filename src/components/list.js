@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
     margindiv: {
 		marginLeft:"10%",
 		marginRight:"10%",
-        marginTop:"2%"
+        marginTop:"1%"
 	},
 	searchbox : {
         width: "100%",
